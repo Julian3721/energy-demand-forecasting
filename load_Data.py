@@ -72,10 +72,10 @@ if not os.path.exists("merged.csv"):
     data_generations.describe()
     data_generations.to_csv("data_generations.csv")
 
-    # We have used the DE_LU BZN in the earlier example (data_generations). 
-    # You can get DE_AT_LU or any other zone data, such as FR, PT, and so on. 
-    # The DE_AT_LU zone was split into DE_LU and AT. 
-    # Please take a closer look at the specs. 
+    # We have used the DE_LU BZN in the earlier example (data_generations).
+    # You can get DE_AT_LU or any other zone data, such as FR, PT, and so on.
+    # The DE_AT_LU zone was split into DE_LU and AT.
+    # Please take a closer look at the specs.
     # To supplement further, you may follow the "R" codes.
 
     # ************************************************************************
@@ -161,6 +161,7 @@ if not os.path.exists("merged.csv"):
 
 
     # ************************************************************************
+
     # %% Merge the dataframes
     # Schritt 1: Zusammenführen
     # Für data_generations (2 Spaltenebenen: Type + ProductionType)
@@ -184,7 +185,9 @@ if not os.path.exists("merged.csv"):
     # Save the merged DataFrame to a CSV file
     merged.to_csv("merged.csv")
 
-else: 
+else:
     merged = pd.read_csv("merged.csv", index_col=0, parse_dates=True)
     print(merged.info())
     print(merged.head())
+
+
