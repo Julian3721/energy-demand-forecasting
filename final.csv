@@ -1,1 +1,0 @@
-DateTime,Actual_Solar,Actual_Wind Onshore,Load_Actual,is_weekend,is_holiday,day_of_week,week_of_year,is_workday,time_sin,time_cos,load_lag_1,load_lag_4,load_lag_12,load_lag_96,load_lag_192,load_lag_672,load_mean_24h,load_std_7d,load_ramp_3h,doy_sin,doy_cos,temp_air,dwpt,rel_humidity,precip_mm,snow,wdir,wspd,wpgt,pres,tsun,coco
