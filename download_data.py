@@ -5,20 +5,7 @@ from sqlalchemy import create_engine
 
 
 def get_merged_data(path: str = "merged.csv"):
-    """
-    Gibt DataFrame 'merged' zurück. Nutzt bestehende CSV, falls vorhanden,
-    oder lädt alles neu aus der Datenbank und speichert es als CSV.
 
-    Parameters
-    ----------
-    path : str
-        Speicher-/Ladepfad für merged.csv. Standard ist lokal im Notebook-Ordner.
-
-    Returns
-    -------
-    pd.DataFrame
-        Enthält kombinierte Zeitreihen (Generierung, Load, Price) für AT.
-    """
     if not os.path.exists(path):
         # %% Define MySQL connection parameters
         db_user = "student"
